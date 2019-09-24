@@ -101,24 +101,25 @@ Containers
         ```
         -   Input Functions
 
-            1.  getline() :- This function is used to store a stream of characters as entered by the user in the object memory. Input comprising of spaces can also be read using this.
+            -   getline() :- This function is used to store a stream of characters as entered by the user in the object memory. Input comprising of spaces can also be read using this.
+            
             ``` c++
                 string inputString;
                 getline(cin,inputString);
                 // cout << inputString;
             ```
 
-            2.  push_back() :- This function is used to input a character at the end of the string.
+            -   push_back() :- This function is used to input a character at the end of the string.
 
-            3.  pop_back() :- Introduced from C++11(for strings), this function is used to delete the last character from the string.
+            -   pop_back() :- Introduced from C++11(for strings), this function is used to delete the last character from the string.
 
         -    Capacity Functions
 
-            4.  resize() :- This function changes the size of string, the size can be increased or decreased. On decreasing, the trailing characters are removed.
-            5.  length():-This function finds the length of the string
-            6.  shrink_to_fit() :- This function decreases the capacity of the string and makes it equal to its size. This operation is useful to save additional memory if we are sure that no further addition of characters have to be made.
-            7.  clear(): This function clears all the characters from the string. The string becomes empty (length becomes 0) after this operation.
-            8.  empty(): Tests whether the string is empty. This function return a Boolean value. 
+            -    resize() :- This function changes the size of string, the size can be increased or decreased. On decreasing, the trailing characters are removed.
+            -   length():-This function finds the length of the string
+            -   shrink_to_fit() :- This function decreases the capacity of the string and makes it equal to its size. This operation is useful to save additional memory if we are sure that no further addition of characters have to be made.
+            -   clear(): This function clears all the characters from the string. The string becomes empty (length becomes 0) after this operation.
+            -   empty(): Tests whether the string is empty. This function return a Boolean value. 
         
         -    Iterator Functions
 
