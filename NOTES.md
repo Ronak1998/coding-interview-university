@@ -117,18 +117,24 @@ Containers
             4.  resize() :- This function changes the size of string, the size can be increased or decreased. On decreasing, the trailing characters are removed.
             5.  length():-This function finds the length of the string
             6.  shrink_to_fit() :- This function decreases the capacity of the string and makes it equal to its size. This operation is useful to save additional memory if we are sure that no further addition of characters have to be made.
+            7.  clear(): This function clears all the characters from the string. The string becomes empty (length becomes 0) after this operation.
+            8.  empty(): Tests whether the string is empty. This function return a Boolean value. 
         
         -    Iterator Functions
 
-            7.  begin() :- Returns an iterator to beginning of the string.
-            8.  end()   :- Returns an iterator to end of the string.
-            9.  rbegin():- Returns a reverse iterator pointing at the end of string.
-            10. rend()  :- Returns a reverse iterator pointing at beginning of string.
-
+            9.  begin() :- Returns an iterator to beginning of the string.
+            10.  end()   :- Returns an iterator to end of the string.
+            
         -   Added functionalities
 
             -   **str1.find(str2)** :-   returns the index of the first occurrence of str2 in str 1, if the sub-string is not found it returns string::npos.
-            -   str1.
+            -   **str1.insert(position,str2) :**
+                -   Inserts str2 in str1 at the given position.
+            -   **str1.compare(str2) :**
+                -   Returns 0 if both strings are equal, else lexicographical difference between them.
+            -   **str1.substr(startPosition,lengthToCopy) :**  
+                -   Returns a string equal to str1[startPosition : startPosition + lengthToCopy]
+                -   lengthToCopy parameter is not necessarily required. when not passed length of substring to return is assumed to be till the end of original string.
     
     -   >   **Queue :**
         
