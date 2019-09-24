@@ -136,6 +136,9 @@ Containers
             -   **str1.substr(startPosition,lengthToCopy) :**  
                 -   Returns a string equal to str1[startPosition : startPosition + lengthToCopy]
                 -   lengthToCopy parameter is not necessarily required. when not passed length of substring to return is assumed to be till the end of original string.
+            -   **str1.replace(start,end,str2) :**
+                -   replaces the [start,end) portion of str1 by str2.
+                -   if start is greater than string length it throws out_of_range error.
     
     -   >   **Queue :**
         
